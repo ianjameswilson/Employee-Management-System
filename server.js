@@ -62,6 +62,7 @@ function viewAllEmployees() {
     // Prints the employee table to the screen
     console.table(res)
     start();
+    
   })
 }
 
@@ -182,10 +183,58 @@ function addRole() {
 }
 
 // function updateEmployeeRole() {
-//   var employeeArray = [];
+//   let name = [];
+//   let newJob = [];
+//   let roleId = ""
+
+//   connection.query("SELECT * FROM employee", function(err, employeeData){
+//     if(err) 
+//     throw err;
+//     //grabbing all employees name
+//     for(let i = 0; i < employeeData.length; i++){
+//       let employeeName = `${employeeData[i].first_name} ${employeeData[i].last_name}`
+
+//       name.push(employeeName);
+//     }
+//     //allows user to pick which employee to update
+//     inquirer.prompt([
+//       {
+//         type: "list",
+//         name: "employee",
+//         message: "Which employee would you like to update?",
+//         choices: name
+//       }
+//     ]).then(function(answer){
+//       console.log(answer);
+//       name = answer.employee.split(" ")
+//       console.log(name);
+//       //find all the roles
+//       connection.query("SELECT * FROM role", function(err, roleData){
+//         if(err) throw err;
+
+//         console.log(roleData)
+//         //loop over the role data to diplay it like we did with employees
+//         for(let i = 0; i < roleData.length; i++){
+          
+//         }
+
+        //grab data which will be first name, last name, and role id # and UPDATE your SQL DB
+
+  //     })
+  //   })
+  // })
+//   const employees = viewAllEmployees();
+
+//   console.log(employees);
+
+//   var employeeArray = employees.map(({ id, first_name, last_name }) => ({
+//     name: `${first_name} ${last_name}`,
+//     value: id
+//   }));
+
 //   var roleArray = [];
 
-//    // find all employees
+// //    // find all employees
 //   var employeeSearch = "SELECT id, first_name, last_name, role_id FROM employee";
 //   connection.query(employeeSearch, function(err, res) {
 //     for (let i = 0; i < res.length; i++) {
@@ -193,7 +242,7 @@ function addRole() {
 //       employeeArray.push(employeeData);
 //     }
 
-//     // find all roles
+      // find all roles
 //     var roleSearch = "SELECT role.id, role.title FROM role";
 //     connection.query(roleSearch, function(err, role) {
 //       for (let i = 0; i < role.length; i++) {
@@ -203,7 +252,8 @@ function addRole() {
 //     })
 //   })
 
-//   // prompt user to select which employee to update and then which role to assign employee
+
+  // prompt user to select which employee to update and then which role to assign employee
 //   inquirer
 //     .prompt([
 //       {
@@ -211,14 +261,22 @@ function addRole() {
 //         type: "list",
 //         message: "Select an employee to update",
 //         choices: employeeArray
-//       },
-//       {
-//         name: "assignRole",
-//         type: "list",
-//         message: "Select an employee to update",
-//         choices: roleArray
 //       }
 //     ]).then(function(answer) {
+//         inquirer
+//           .prompt([
+//             {
+//               name: "assignRole",
+//               type: "list",
+//               message: "Select an employee to update",
+//               choices: roleArray
+//             }
+//           ]).then(function(answer) {
+//             console.log(employeeArray)
+//             console.log(answer);
+//           })
+        
+
 //       //MySQL query update with employeeId and roleID
 //       var query = "UPDATE employee SET role_id=? WHERE employee.id=?";
 //       if (answer.selectEmployee != "") {
