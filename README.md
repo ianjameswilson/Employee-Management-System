@@ -11,7 +11,11 @@ To easily view and manage the departments, roles, and employees in a company so 
 ## Installation
 To install neccessary dependancies, run the following command:
 ```
-npm install, npm mysql, npm inquirer
+npm install
+
+npm mysql
+
+npm inquirer
 ```
 ## Usage 
 ```

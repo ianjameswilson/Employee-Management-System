@@ -1,5 +1,5 @@
 {
-  "name": "employee-management-system",
+  "name": "employee-tracker",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ianjameswilson/Employee-Management-System.git"
+    "url": "git+https://github.com/ianjameswilson/Employee-Tracker.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ianjameswilson/Employee-Management-System/issues"
+    "url": "https://github.com/ianjameswilson/Employee-Tracker/issues"
   },
-  "homepage": "https://github.com/ianjameswilson/Employee-Management-System#readme",
+  "homepage": "https://github.com/ianjameswilson/Employee-Tracker#readme",
   "dependencies": {
     "console.table": "^0.10.0",
     "inquirer": "^7.3.3",
