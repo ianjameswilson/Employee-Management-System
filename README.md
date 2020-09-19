@@ -1,6 +1,6 @@
-# Employee Management System
+# Employee Managment System
 ## Description
-To easily view and manage the departments, roles, and employees in a company so that a company executive can organize and plan their business
+To easily view and manage the departments, roles, and employees in a company so that a company executive can organize and plan their business.
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
@@ -11,11 +11,11 @@ To easily view and manage the departments, roles, and employees in a company so 
 ## Installation
 To install neccessary dependancies, run the following command:
 ```
-npm install
+npm install, npm mysql, npm inquirer
 ```
 ## Usage 
 ```
-node index.js
+npm start
 ```
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
