@@ -31,7 +31,7 @@ function start() {
       name: "whatWouldYouLikeToDo",
       type: "list",
       message: "What would you like to do?",
-      choices: ["View All Employees", "View All Roles", "View All Departments", "Add Employee", "Add Department", "Add Role", "Update Employee Role", "Exit"]
+      choices: ["View All Employees", "View All Roles", "View All Departments", "Add Employee", "Add Department", "Add Role", "Exit"]
     })
     .then(function(answer) {
       if (answer.whatWouldYouLikeToDo === "View All Employees") {
@@ -46,8 +46,8 @@ function start() {
             addDepartment();
         } else if (answer.whatWouldYouLikeToDo === "Add Role") {
             addRole();
-        } else if (answer.whatWouldYouLikeToDo === "Update Employee Role") {
-            updateEmployeeRole();
+        // } else if (answer.whatWouldYouLikeToDo === "Update Employee Role") {
+        //     updateEmployeeRole();
         } else {
             connection.end();
         }
